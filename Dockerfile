@@ -1,8 +1,11 @@
-FROM node
+FROM node:latest
 
-RUN mkdir -p /src/app/
-WORKDIR /src/app/
+RUN mkdir -p /usr/src/app/
+WORKDIR /usr/src/app/
+COPY package.json /usr/src/app/
+RUN yarn install
+COPY . /usr/src/app/
 
-COPY . /src/app/
+EXPOSE 3000
 
-CMD ["node", "index.js"]
+CMD ["yarn", "devStart"]
