@@ -1,4 +1,5 @@
 # docker-test
-Pull
-The `docker-compose up`
-Install Docker https://www.docker.com/get-started before
+
+- Install Docker https://www.docker.com/get-started
+- Clone project
+- The `docker-compose up`
