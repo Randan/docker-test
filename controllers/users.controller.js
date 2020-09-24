@@ -26,9 +26,9 @@ module.exports = {
     patch: async (req, res) => {
         const { firstName, lastName, age } = req.body;
 
-        if (firstName != null) res.user.firstName = firstName;
-        if (lastName != null) res.user.lastName = lastName;
-        if (age != null) res.user.age = age;
+        if (firstName !== null) res.user.firstName = firstName;
+        if (lastName !== null) res.user.lastName = lastName;
+        if (age !== null) res.user.age = age;
 
         try {
             const updatedUser = await res.user.save();
