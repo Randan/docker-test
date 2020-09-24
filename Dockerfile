@@ -8,4 +8,4 @@ COPY . /usr/src/app/
 
 EXPOSE 3000
 
-CMD ["yarn", "devStart"]
+CMD ["yarn", "start:docker"]

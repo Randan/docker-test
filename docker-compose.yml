@@ -1,7 +1,7 @@
 version: "2"
 services:
   app:
-    container_name: docker_test
+    container_name: express-mongo-server
     restart: always
     build: .
     ports:
