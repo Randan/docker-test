@@ -1,4 +1,4 @@
-const jwt = require("jsonwebtoken");
+const jwt = require('jsonwebtoken');
 const { ACCESS_TOKEN_SECRET } = require('../utils/getEnvVar');
 
 const authenticateToken = (req, res, next) => {
@@ -15,7 +15,7 @@ const authenticateToken = (req, res, next) => {
 
     req.user = user;
     next();
-  })
+  });
 };
 
 const generateAccessToken = (data, isRemember) =>

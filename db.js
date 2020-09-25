@@ -6,7 +6,7 @@ module.exports = () => {
     ENV === 'DOCKER'
       ? DOCKER_DATABASE_URL
       : LOCAL_DATABASE_URL,
-    { useNewUrlParser: true, useUnifiedTopology: true }
-  )
+    { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true }
+  );
   return mongoose.connection;
 };
